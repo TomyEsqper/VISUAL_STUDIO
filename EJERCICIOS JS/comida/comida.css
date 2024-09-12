@@ -1,0 +1,160 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-section, .mesa-section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+thead {
+    background-color: #f8f8f8;
+}
+
+thead th {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+tfoot {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group button {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button-group button:hover {
+    background: linear-gradient(135deg, #3b41a4, #6c7bfc);
+    transform: scale(1.05);
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: #4e54c8;
+}
+
+button#resetButton {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button#resetButton:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    transform: scale(1.05);
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4e54c8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

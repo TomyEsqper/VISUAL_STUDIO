@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Comidas y Bebidas</title>
+    <link rel="stylesheet" href="/comida/comida.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Administrador de Comidas y Bebidas</h1>
+        </header>
+        <main>
+            <section class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Comida -->
+                        <tr>
+                            <td>Perro</td>
+                            <td>5000</td>
+                            <td id="perroQty">0</td>
+                            <td>
+                                <div class="button-group">
+                                    <button onclick="updateQuantity('perro', -1)">-</button>
+                                    <button onclick="updateQuantity('perro', 1)">+</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hamburguesa</td>
+                            <td>7800</td>
+                            <td id="hamburguesaQty">0</td>
+                            <td>
+                                <div class="button-group">
+                                    <button onclick="updateQuantity('hamburguesa', -1)">-</button>
+                                    <button onclick="updateQuantity('hamburguesa', 1)">+</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pizza</td>
+                            <td>6000</td>
+                            <td id="pizzaQty">0</td>
+                            <td>
+                                <div class="button-group">
+                                    <button onclick="updateQuantity('pizza', -1)">-</button>
+                                    <button onclick="updateQuantity('pizza', 1)">+</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- Bebidas -->
+                        <tr>
+                            <td>Coca-Cola</td>
+                            <td>5000</td>
+                            <td id="cocaColaQty">0</td>
+                            <td>
+                                <div class="button-group">
+                                    <button onclick="updateQuantity('cocaCola', -1)">-</button>
+                                    <button onclick="updateQuantity('cocaCola', 1)">+</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pepsi</td>
+                            <td>5000</td>
+                            <td id="pepsiQty">0</td>
+                            <td>
+                                <div class="button-group">
+                                    <button onclick="updateQuantity('pepsi', -1)">-</button>
+                                    <button onclick="updateQuantity('pepsi', 1)">+</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Manzana</td>
+                            <td>5000</td>
+                            <td id="manzanaQty">0</td>
+                            <td>
+                                <div class="button-group">
+                                    <button onclick="updateQuantity('manzana', -1)">-</button>
+                                    <button onclick="updateQuantity('manzana', 1)">+</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="total">Total</td>
+                            <td id="totalCost">0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section class="mesa-section">
+                <h2>Selecciona Mesa</h2>
+                <div class="select-container">
+                    <label for="numTables">Número de mesa:</label>
+                    <select id="numTables" onchange="switchTable()">
+                        <option value="1">Mesa 1</option>
+                        <option value="2">Mesa 2</option>
+                        <option value="3">Mesa 3</option>
+                    </select>
+                    <button id="resetButton" onclick="resetTable()">Reiniciar</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/comida/comida.js"></script>
+</body>
+</html>

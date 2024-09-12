@@ -1,0 +1,28 @@
+body{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+
+.caja{
+    margin-top: 100px;
+}
+
+button{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+button:hover{
+    background-color: green;
+}

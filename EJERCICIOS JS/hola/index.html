@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>JS CreateElement Demo</title>
+    <link rel="stylesheet" href="/hola/hola.css">
+</head>
+<body>
+    <script src="/hola/hola.js"></script>
+
+
+    <h1 style="text-align:center;">Trabajo con JavaScript </h1>
+
+    <div class="caja">
+      <input type="number" id="n1" class="form-control" placeholder="numero 1" /> <br/>
+      <input type="number" id="n2" class="form-control" placeholder="numero 2" /> <br/>
+      <select id="opc" class="form-select" aria-label="Default select example" >
+      <option selected>opcion</option>
+      <option value="1">sumar</option>
+      <option value="2">restar</option>
+      <option value="3">multiplicar</option>
+      <option value="4">dividir</option>
+      <option value="5">potencia del Primer numero</option>
+    </select>
+    <br> 
+     <button onclick="mostrar()" class="btn btn-outline-dark">Calculadora</button>
+    <!-- mostrar el resultado del total de las funciones -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
+  <strong id="resultado"></strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+</div>
+
+   
+
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos con Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Productos con Contador</h1>
+    <div class="container">
+        <div class="card">
+            <img src="/likes/porsche-normal.webp" alt="Producto 1">
+            <h5>PISTOLA</h5>
+            <h2 id="valor1">$0</h2>
+            <p>Productos en el carrito: <span id="productos1">0</span></p>
+            <button class="btn" onclick="incremento(1)">+ </button>
+            <button class="btn" onclick="decremento(1)">- </button>
+            <button class="btn" onclick="resetear(1)">RESET </button>
+        </div>
+        <div class="card">
+            <img src="img/espada.png" alt="Producto 2">
+            <h5>ESPADA</h5>
+            <h2 id="valor2">$0</h2>
+            <p>Productos en el carrito: <span id="productos2">0</span></p>
+            <button class="btn" onclick="incremento(2)">+ </button>
+            <button class="btn" onclick="decremento(2)">- </button>
+            <button class="btn" onclick="resetear(2)">RESET </button>
+        </div>
+    </div>
+
+    <div class="cart-info">
+        <p>Total de objetos en el carrito: <span id="totalItems">0</span></p>
+        <p>Total de la compra: $<span id="totalAmount">0</span></p>
+    </div>
+<script src="javiña/megustas.js"></script>
+</body>
+</html>
